@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ClearView News</title>
+    <link rel="icon" href="/img/logo.ico" type="image/x-icon">
+    <link rel="icon" href="/img/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/img/logo.png" alt="ClearView News Logo" class="logo-image">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="latest.html">Latest</a></li>
+                    <li><a href="opinion.html">Opinion</a></li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="newsletter.html">Newsletter</a></li>
+                </ul>
+            </nav>
+            <!-- Search Form -->
+            <form id="search-form" onsubmit="return handleSearch(event)">
+                <input type="text" id="search-input" placeholder="Search news..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="contact-message"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Logo or Title Section -->
+            <div class="footer-logo">
+                <h2>ClearView News</h2>
+            </div>
+    
+            <!-- Navigation Links Section -->
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Social Media Icons Section -->
+            <div class="footer-social">
+                <a href="#" class="social-icon">Facebook</a>
+                <a href="#" class="social-icon">Twitter</a>
+                <a href="#" class="social-icon">Instagram</a>
+            </div>
+        </div>
+    
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 ClearView News. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script src="/js/contact.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>

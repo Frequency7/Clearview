@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - ClearView News</title>
+    <link rel="icon" href="/img/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/img/logo.png" alt="ClearView News Logo" class="logo-image">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="latest.html">Latest</a></li>
+                    <li><a href="opinion.html">Opinion</a></li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="newsletter.html">Newsletter</a></li>
+                </ul>
+            </nav>
+            <!-- Search Form -->
+            <form id="search-form" onsubmit="return handleSearch(event)">
+                <input type="text" id="search-input" placeholder="Search news..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Categories Section -->
+    <section id="categories-section">
+        <h2 id="category-title">Category</h2>
+        <div class="categories-grid">
+            <!-- Category Cards -->
+            <div class="category-card" data-category="technology">
+                <h3><a href="#" class="category-link">Technology</a></h3>
+                <p>Latest news on technology, gadgets, and innovations.</p>
+            </div>
+            <div class="category-card" data-category="sports">
+                <h3><a href="#" class="category-link">Sports</a></h3>
+                <p>Updates and news from the world of sports.</p>
+            </div>
+            <div class="category-card" data-category="health">
+                <h3><a href="#" class="category-link">Health</a></h3>
+                <p>News on health, wellness, and medical advancements.</p>
+            </div>
+            <div class="category-card" data-category="entertainment">
+                <h3><a href="#" class="category-link">Entertainment</a></h3>
+                <p>Latest updates on movies, music, and celebrities.</p>
+            </div>
+            <div class="category-card" data-category="business">
+                <h3><a href="#" class="category-link">Business</a></h3>
+                <p>Current trends and news in the business world.</p>
+            </div>
+            <div class="category-card" data-category="science">
+                <h3><a href="#" class="category-link">Science</a></h3>
+                <p>Discoveries and advancements in science.</p>
+            </div>
+            <div class="category-card" data-category="education">
+                <h3><a href="#" class="category-link">Education</a></h3>
+                <p>News about education and academic trends.</p>
+            </div>
+            <div class="category-card" data-category="environment">
+                <h3><a href="#" class="category-link">Environment</a></h3>
+                <p>News on environmental issues and climate change.</p>
+            </div>
+        </div>
+    
+        <hr>
+    
+        <div class="news-grid" id="news-grid">
+            <!-- News articles will be displayed here -->
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>ClearView News</h2>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon">Facebook</a>
+                <a href="#" class="social-icon">Twitter</a>
+                <a href="#" class="social-icon">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ClearView News. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/categ.js"></script>
+
+</body>
+</html>
